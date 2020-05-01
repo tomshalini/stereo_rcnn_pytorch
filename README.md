@@ -3,9 +3,9 @@ This repository has been created to train stereo rcnn and convert pretrained mod
 
 0.0. Install Pytorch:
 
-    conda create -n env_stereo python=2.7
+    conda create -n env_stereo python=3.6
     conda activate env_stereo
-    conda install pytorch=0.3.0 cuda80 -c pytorch
+    conda install pytorch=1.0.0 cuda90 -c pytorch
     conda install torchvision -c pytorch
     
 0.1. Other dependencies:
@@ -17,7 +17,7 @@ This repository has been created to train stereo rcnn and convert pretrained mod
 0.2. Build:
 
     cd lib
-    sh make.sh
+    python setup.py build develop
     cd ..
 
 # Create symlinks:
